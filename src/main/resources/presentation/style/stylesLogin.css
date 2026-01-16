@@ -1,0 +1,31 @@
+.button:hover {
+  -fx-drop
+}
+
+#Pane {
+  -fx-background-color: #282a37;
+  -fx-border-color: black;
+}
+
+#Pane2 {
+  -fx-background-color: white;
+  -fx-background-radius: 8px;
+  -fx-border-color: black;
+  -fx-border-radius: 8px;
+}
+
+#Button1 {
+  -fx-border-color: black;
+  -fx-background-color: yellow;
+  -fx-background-radius: 5px;
+  -fx-border-radius: 5px;
+}
+
+#Field1, #Field2 {
+  -fx-border-color: black;
+  -fx-background-color: #afafaf;
+  -fx-background-radius: 5px;
+  -fx-border-radius: 5px;
+  -fx-text-fill: black;
+  -fx-prompt-text-fill: #555555;
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainAnchorPane" prefHeight="600.0" prefWidth="800.0" stylesheets="@../style/stylesMain.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ve.edu.ucab.presentation.controller.MainController">
+  <children>
+    <!-- Contenido principal -->
+    <AnchorPane id="mainContent" fx:id="mainContent" layoutX="192.0" prefHeight="600.0" prefWidth="610.0">
+      <children>
+        <Pane id="contentPane" layoutX="7.0" prefHeight="600.0" prefWidth="604.0">
+          <children>
+            <Pane id="dashboardPane" layoutX="15.0" layoutY="-51.0" prefHeight="278.0" prefWidth="567.0">
+              <children>
+                <Label id="dashboardLabel" layoutX="17.0" layoutY="73.0" text="Dashboard">
+                  <font>
+                    <Font name="Segoe UI Bold Italic" size="12.0" />
+                  </font>
+                </Label>
+                <Label id="usernameLabel" fx:id="usernameLabel" layoutX="111.0" layoutY="67.0" prefHeight="26.0" prefWidth="366.0" text="" />
+                <Separator id="verticalSeparator" layoutX="94.0" layoutY="67.0" orientation="VERTICAL" prefHeight="26.0" prefWidth="2.0" />
+                <HBox id="contentHBox" layoutX="1.0" layoutY="105.0" prefHeight="170.0" prefWidth="567.0">
+                  <children>
+                    <VBox id="balanceVBox">
+                      <children>
+                        <Label id="balanceLabel" text="Mi Saldo" textAlignment="CENTER">
+                          <font>
+                            <Font name="Segoe UI Bold" size="12.0" />
+                          </font>
+                        </Label>
+                        <Pane id="cardPane">
+                          <children>
+                            <Button id="addButton" mnemonicParsing="false" prefHeight="63.0" prefWidth="62.0" text="+">
+                              <font>
+                                <Font name="Segoe UI Bold Italic" size="20.0" />
+                              </font>
+                            </Button>
+                            <AnchorPane id="cardAnchorPane" layoutX="71.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="212.0">
+                              <padding>
+                                <Insets left="15.0" />
+                              </padding>
+                              <children>
+                                <Label id="cardNameLabel" layoutX="8.0" layoutY="16.0" text="BroVisa" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                  <font>
+                                    <Font name="Calibri Bold Italic" size="21.0" />
+                                  </font>
+                                </Label>
+                                <Label fx:id="cardBalanceLabel" id="cardBalanceLabel" layoutX="25.0" layoutY="62.0" text="saldo reflejado" textAlignment="CENTER">
+                                  <font>
+                                    <Font name="Segoe UI Bold" size="12.0" />
+                                  </font>
+                                </Label>
+                                <Label id="cardNumberLabel" layoutX="25.0" layoutY="86.0" text="**** **** **** 4565" textAlignment="CENTER">
+                                  <font>
+                                    <Font name="Segoe UI Bold" size="12.0" />
+                                  </font>
+                                </Label>
+                              </children>
+                            </AnchorPane>
+                          </children>
+                        </Pane>
+                      </children>
+                      <padding>
+                        <Insets left="16.0" top="16.0" />
+                      </padding>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </Pane>
+          </children>
+        </Pane>
+      </children>
+    </AnchorPane>
+    <ImageView id="userImage" fitHeight="98.0" fitWidth="99.0" layoutX="49.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/usermain.png" />
+      </image>
+    </ImageView>
+    <VBox layoutX="10.0" layoutY="181.0" spacing="12.0" prefWidth="178.0">
+      <children>
+        <Button id="perfilButton" fx:id="perfilButton" mnemonicParsing="false" onAction="#handlePerfil" prefHeight="38.0" prefWidth="178.0" text="Perfil" textAlignment="JUSTIFY">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+        <Button id="transaccionesButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" text="Transacciones" textAlignment="CENTER" onAction="#handleTransacciones">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+        <Button id="fondearButton" fx:id="fondearButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" text="Fondear" textAlignment="CENTER" onAction="#handleFondear">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+        <Button id="catalogoButton" fx:id="catalogoButton" mnemonicParsing="false" onAction="#handleCatalogo" prefHeight="38.0" prefWidth="178.0" text="Catálogo" textAlignment="CENTER">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+        <Button id="portafolioButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" text="Portafolio" textAlignment="CENTER" onAction="#handlePortafolio">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+        <Button id="historialButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" text="Historial" textAlignment="CENTER" onAction="#handleHistorial">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+      </children>
+    </VBox>
+    <Pane id="logoutPane" layoutX="10.0" layoutY="556.0" prefHeight="30.0" prefWidth="178.0">
+      <children>
+        <Button id="logoutButton" fx:id="logoutButton" layoutX="4.100000381469727" layoutY="3.0999755859375" mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="103.0" text="Cerrar sesión" textAlignment="CENTER">
+          <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+          </font>
+        </Button>
+        <ImageView id="logoutImage" fitHeight="30.0" fitWidth="25.0" layoutX="117.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../images/logout.png" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

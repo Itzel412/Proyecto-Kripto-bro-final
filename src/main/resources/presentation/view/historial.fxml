@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #262834;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ve.edu.ucab.presentation.controller.HistorialController">
+    <children>
+        <Label layoutX="30.0" layoutY="20.0" text="Historial de Transacciones" textFill="#e4b131">
+            <font>
+                <Font name="Segoe UI Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tablaHistorial" layoutX="30.0" layoutY="70.0" prefHeight="250.0" prefWidth="640.0" style="-fx-background-color: #ffffff;">
+            <columns>
+                <TableColumn fx:id="colFecha" text="Fecha" prefWidth="120.0" />
+                <TableColumn fx:id="colTipo" text="Tipo" prefWidth="80.0" />
+                <TableColumn fx:id="colActivo" text="Activo" prefWidth="120.0" />
+                <TableColumn fx:id="colCantidad" text="Cantidad" prefWidth="100.0" />
+                <TableColumn fx:id="colMonto" text="Monto (USD)" prefWidth="120.0" />
+            </columns>
+        </TableView>
+        <Button fx:id="volverButton" layoutX="30.0" layoutY="340.0" prefWidth="100.0" text="Volver" style="-fx-background-color: #e4b131;" />
+    </children>
+</AnchorPane> 

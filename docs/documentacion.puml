@@ -1,0 +1,81 @@
+@startuml
+
+class Main {
+    -devoplata: Crypto
+}
+
+enum TipoTransaccion {
+    COMPRA,
+    VENTA
+}
+
+class DetalleTransaccion {
+    -fecha: LocalDate
+    -monto: double
+}
+
+class Portafolio{
+
+
+
+}
+
+DetalleTransaccion "0..*" o-- "1" Activo: -activoAsociado: Activo
+
+TipoTransaccion "1" --o "0..*" DetalleTransaccion: -tipoTransaccion: TipoTransaccion
+
+class Usuario {
+    -nombre: String
+    -id: int
+    -saldo: double
+    -password: int
+
+    +setPassword(nuevoPassword: int): void
+}
+
+DetalleTransaccion "0..*" --* "1" Usuario: -historial: ArrayList<DetalleTransaccion>
+
+class GestionUsuario {
+    -usuario: Usuario
+
+    +cambiarNombre(nombre: String): void
+    +cambiarPassword(nuevoPassword: int): void
+    +aumentarSaldo(nuevoFondo: int): void
+}
+
+Usuario -- GestionUsuario
+
+interface IntCompras {
+    +comprar(): void
+}
+
+interface IntVentas {
+    +vender(): void
+}
+
+interface IntMostrar {
+    +mostrar(): void
+}
+
+abstract class Activo {
+    -nombre: String
+    -precioActual: double
+    -ticker: Ticker
+    -volatibilidad: double
+}
+
+class Crypto {
+
+}
+
+class Accion {
+
+}
+
+IntActivo <|.. Activo
+Activo <|-- Accion
+Activo <|-- Crypto
+
+Activo "0..*" --o "1" Usuario: -portafolio: ArrayList<Activo>
+
+@enduml

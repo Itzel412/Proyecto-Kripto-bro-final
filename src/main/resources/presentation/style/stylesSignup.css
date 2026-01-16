@@ -1,0 +1,67 @@
+/* Estilos para el Pane principal */
+#mainPane {
+    -fx-background-color: #262834; /* Fondo oscuro */
+}
+
+/* Estilos para el Pane del formulario de registro */
+#signupPane {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-border-color: #262834; /* Borde oscuro */
+    -fx-background-radius: 10px; /* Bordes redondeados */
+    -fx-border-radius: 10px; /* Bordes redondeados */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2); /* Sombra suave */
+}
+
+/* Estilos para el label de "Registrate!" */
+#signupLabel {
+    -fx-text-fill: #262834; /* Texto oscuro, prioridad sobre textFill del FXML */
+}
+
+/* Estilos para el enlace de "Iniciar sesión" */
+#loginLink {
+    -fx-text-fill: #262834; /* Texto oscuro, prioridad sobre textFill del FXML */
+}
+
+/* Estilos para el label de "¿Ya tienes una cuenta?" */
+#haveAccountLabel {
+    -fx-text-fill: #262834; /* Texto oscuro */
+}
+
+/* Estilos para el botón de registro */
+#signupButton {
+    -fx-background-color: #262834; /* Fondo oscuro */
+    -fx-text-fill: #ffffff; /* Texto blanco, prioridad sobre textFill del FXML */
+    -fx-border-radius: 4px; /* Bordes redondeados */
+    -fx-background-radius: 4px; /* Fondo con bordes redondeados */
+}
+
+/* Estilos para el campo de nombre */
+#usernameField {
+    -fx-background-color: #d9d9d9; /* Fondo gris claro */
+    -fx-border-color: #262834; /* Borde oscuro */
+    -fx-background-radius: 5px; /* Bordes redondeados */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el campo de contraseña */
+#passwordField {
+    -fx-background-color: #d9d9d9; /* Fondo gris claro */
+    -fx-border-color: #262834; /* Borde oscuro */
+    -fx-background-radius: 5px; /* Bordes redondeados */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el label de error */
+#errorLabel {
+    -fx-text-fill: red; /* Texto rojo para errores */
+}
+
+/* Estilos para los ImageView (logos) */
+#logoTop, #logoBottom {
+    -fx-opacity: 0.8; /* Ligera transparencia para un efecto más suave */
+}
+
+/* Estilos para el BorderPane vacío */
+#emptyBorderPane {
+    -fx-background-color: transparent; /* Fondo transparente */
+}

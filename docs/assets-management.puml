@@ -1,0 +1,79 @@
+@startuml
+
+package GestionUsuarios-Activo as GUA <<Cloud>> {
+
+class Usuario {
+  -nombre: String
+  -id: int
+  -saldo: double
+  -portafolio: Map<String, Activo>
+  -historial: List<Transaccion>
+
+  +depositarCuenta(monto: double): void
+  +comprarActivo(nombreActivo: String, tipoActivo: String, cantidad: double): void
+  +venderActivo(nombreActivo: String, cantidad: double): void
+}
+
+class UsuarioFactory {
+  +crearActivo(nombreActivo: String, tipoActivo: String): Activo
+}
+
+Usuario --> UsuarioFactory
+UsuarioFactory --> Activo
+Usuario --> Transaccion
+}
+
+note "Los usuarios usan un Factory \npara la creación de Activos." as N4
+N4 .. GUA
+
+package GestionActivos <<Rectangle>> {
+
+interface ComportamientoActivo <<interface>> {
+  +setPrecio(): void
+}
+
+abstract class Activo <<abstract>> {
+  -nombre: String
+  -alias: String
+  -precio: double
+  -detalle: DetalleActivo
+
+  +getPrecio(): double
+}
+
+class Crypto
+class Accion
+
+Activo <|-- Accion
+Activo <|-- Crypto
+
+class DetalleActivo <<Singleton>> {
+  -nombreActivo: String
+  -demandaGlobal: int
+  -volumenGlobal: double
+  -historialPrecios: List<Transaccion>
+
+  +actualizarDatos(): void
+  +setPrecio(): void
+}
+
+DetalleActivoFactory --> DetalleActivo
+Activo --> DetalleActivo
+DetalleActivo --> Transaccion
+
+ComportamientoActivo <|.. DetalleActivo
+
+note "Cada activo accede a su única instancia \nde DetalleActivo según su nombre." as N1
+note "El usuario usa Factory Method para \ncrear activos nuevos." as N2
+note "Si el usuario ya tiene un activo, \nse usa la misma instancia (Singleton)." as N3
+note "ComportamientoActivo ahora lo implementa DetalleActivo, \nque gestiona los precios dinámicamente." as N4
+
+N1 .. N2
+N2 .. N3
+N3 .. N4
+Activo .. N1
+}
+
+
+@enduml
+

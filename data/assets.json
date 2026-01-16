@@ -1,0 +1,72 @@
+[
+  {
+    "assetName": "Apple Inc.",
+    "ticker": "AAPL",
+    "assetType": "STOCK",
+    "price": 180.0,
+    "volatility": 0.03
+  },
+  {
+    "assetName": "Microsoft Corp.",
+    "ticker": "MSFT",
+    "assetType": "STOCK",
+    "price": 320.0,
+    "volatility": 0.025
+  },
+  {
+    "assetName": "Tesla Inc.",
+    "ticker": "TSLA",
+    "assetType": "STOCK",
+    "price": 250.0,
+    "volatility": 0.05
+  },
+  {
+    "assetName": "Amazon.com Inc.",
+    "ticker": "AMZN",
+    "assetType": "STOCK",
+    "price": 135.0,
+    "volatility": 0.035
+  },
+  {
+    "assetName": "Alphabet Inc.",
+    "ticker": "GOOGL",
+    "assetType": "STOCK",
+    "price": 140.0,
+    "volatility": 0.028
+  },
+  {
+    "assetName": "Bitcoin",
+    "ticker": "BTC",
+    "assetType": "CRYPTO",
+    "price": 40000.0,
+    "volatility": 0.07
+  },
+  {
+    "assetName": "Ethereum",
+    "ticker": "ETH",
+    "assetType": "CRYPTO",
+    "price": 2200.0,
+    "volatility": 0.06
+  },
+  {
+    "assetName": "Solana",
+    "ticker": "SOL",
+    "assetType": "CRYPTO",
+    "price": 90.0,
+    "volatility": 0.09
+  },
+  {
+    "assetName": "Cardano",
+    "ticker": "ADA",
+    "assetType": "CRYPTO",
+    "price": 0.5,
+    "volatility": 0.08
+  },
+  {
+    "assetName": "Dogecoin",
+    "ticker": "DOGE",
+    "assetType": "CRYPTO",
+    "price": 0.08,
+    "volatility": 0.12
+  }
+]

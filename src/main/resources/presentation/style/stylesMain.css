@@ -1,0 +1,128 @@
+/* Estilos para el AnchorPane principal */
+#mainAnchorPane {
+  -fx-background-color: #313543; /* Fondo oscuro */
+}
+
+/* Estilos para el AnchorPane de contenido principal */
+#mainContent {
+  -fx-background-color: #000000; /* Fondo negro */
+}
+
+/* Estilos para el Pane de contenido */
+#contentPane {
+  -fx-background-color: #262834; /* Fondo oscuro */
+  -fx-background-radius: 5px 0px 5px 0px; /* Bordes redondeados específicos */
+}
+
+/* Estilos para el Pane del dashboard */
+#dashboardPane {
+  -fx-background-color: #ffffff; /* Fondo blanco */
+  -fx-border-color: #c1c1c1; /* Borde gris claro */
+  -fx-background-radius: 30px; /* Bordes redondeados */
+  -fx-border-radius: 30px; /* Bordes redondeados */
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 2); /* Sombra suave */
+}
+
+/* Estilos para el label de Dashboard */
+#dashboardLabel {
+  -fx-text-fill: #262834; /* Texto oscuro */
+}
+
+/* Estilos para el label de nombre de usuario */
+#usernameLabel {
+  -fx-font-size: 18px; /* Tamaño de fuente */
+  -fx-font-weight: bold; /* Negrita */
+  -fx-font-style: italic; /* Itálica */
+  -fx-text-fill: #262834; /* Texto oscuro */
+}
+
+/* Estilos para el separador vertical */
+#verticalSeparator {
+  -fx-background-color: #c1c1c1; /* Color del separador */
+}
+
+/* Estilos para el HBox de contenido */
+#contentHBox {
+  -fx-background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el VBox de saldo */
+#balanceVBox {
+  -fx-background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el label de "Mi Saldo" */
+#balanceLabel {
+  -fx-text-fill: #262834; /* Texto oscuro */
+}
+
+/* Estilos para el Pane de la tarjeta */
+#cardPane {
+  -fx-background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el botón de agregar (+) */
+#addButton {
+  -fx-background-color: transparent; /* Fondo transparente */
+  -fx-border-color: #c1c1c1; /* Borde gris claro */
+  -fx-border-radius: 5px; /* Bordes redondeados */
+  -fx-background-radius: 5px; /* Fondo con bordes redondeados */
+  -fx-border-style: dashed; /* Borde punteado */
+  -fx-text-fill: #c1c1c1; /* Texto gris claro */
+}
+
+/* Estilos para el AnchorPane de la tarjeta */
+#cardAnchorPane {
+  -fx-background-color: linear-gradient(to right, #262834, #e4b131); /* Gradiente de oscuro a dorado */
+  -fx-background-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para el label del nombre de la tarjeta (BroVisa) */
+#cardNameLabel {
+  -fx-text-fill: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para el label de saldo reflejado */
+#cardBalanceLabel {
+  -fx-text-fill: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para el label del número de tarjeta */
+#cardNumberLabel {
+  -fx-text-fill: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para la imagen de usuario */
+#userImage {
+  -fx-opacity: 0.8; /* Ligera transparencia */
+}
+
+/* Estilos para los botones del menú lateral */
+#perfilButton,
+#transaccionesButton,
+#fondearButton,
+#catalogoButton,
+#portafolioButton,
+#historialButton {
+  -fx-background-color: #e5c52c; /* Fondo dorado */
+  -fx-text-fill: #000000; /* Texto negro */
+  -fx-background-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para el Pane de logout */
+#logoutPane {
+  -fx-background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el botón de cerrar sesión */
+#logoutButton {
+  -fx-background-color: #e5c52c; /* Fondo dorado */
+  -fx-text-fill: #000000; /* Texto negro */
+  -fx-border-radius: 10px; /* Bordes redondeados */
+  -fx-background-radius: 10px; /* Fondo con bordes redondeados */
+}
+
+/* Estilos para la imagen de cerrar sesión */
+#logoutImage {
+  -fx-opacity: 0.8; /* Ligera transparencia */
+}

@@ -1,0 +1,24 @@
+/* Estilos para el VBox del diálogo de error */
+#errorDialog {
+    -fx-padding: 20; /* Espaciado interno */
+    -fx-background-color: white; /* Fondo blanco */
+    -fx-border-color: #d9534f; /* Borde rojo */
+    -fx-border-width: 2; /* Ancho del borde */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-background-radius: 5px; /* Fondo con bordes redondeados */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2); /* Sombra suave */
+}
+
+/* Estilos para el label del mensaje */
+#messageLabel {
+    -fx-text-fill: #d9534f; /* Texto rojo */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilos para el botón OK */
+#okButton {
+    -fx-background-color: #d9534f; /* Fondo rojo */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-background-radius: 5px; /* Fondo con bordes redondeados */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+}

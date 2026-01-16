@@ -1,0 +1,269 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "yjbbfxam",
+    "balance": 2000.25,
+    "portfolio": [],
+    "transactionHistory": []
+  },
+  {
+    "id": 2,
+    "username": "alo",
+    "password": "4321",
+    "balance": 87654.45,
+    "portfolio": [],
+    "transactionHistory": []
+  },
+  {
+    "id": 3,
+    "username": "lucia",
+    "password": "ghi123",
+    "balance": 1500.0,
+    "portfolio": [],
+    "transactionHistory": []
+  },
+  {
+    "id": 4,
+    "username": "mario",
+    "password": "1234",
+    "balance": 12346.32,
+    "portfolio": [
+      {
+        "ticker": "AAPL",
+        "amount": 1.0,
+        "purchasePrice": 178.95
+      },
+      {
+        "ticker": "TSLA",
+        "amount": 1.0,
+        "purchasePrice": 250.0
+      },
+      {
+        "ticker": "MSFT",
+        "amount": 1.0,
+        "purchasePrice": 310.26
+      },
+      {
+        "ticker": "MSFT",
+        "amount": 1.0,
+        "purchasePrice": 306.58
+      },
+      {
+        "ticker": "MSFT",
+        "amount": 10.0,
+        "purchasePrice": 342.91
+      }
+    ],
+    "transactionHistory": [
+      {
+        "transactionType": "BUY",
+        "amount": 2.0,
+        "assetTicker": "AMZN",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "AMZN",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "ADA",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "SELL",
+        "amount": 1.0,
+        "assetTicker": "AMZN",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "SELL",
+        "amount": 1.0,
+        "assetTicker": "AMZN",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "SELL",
+        "amount": 1.0,
+        "assetTicker": "AMZN",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "SELL",
+        "amount": 6.0,
+        "assetTicker": "SOL",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "MSFT",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 310.26
+      },
+      {
+        "transactionType": "SELL",
+        "amount": 1.0,
+        "assetTicker": "MSFT",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 310.26
+      },
+      {
+        "transactionType": "SELL",
+        "amount": 1.0,
+        "assetTicker": "ADA",
+        "assetType": "CRYPTO",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "AAPL",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 178.95
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "TSLA",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 250.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "MSFT",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 306.58
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 1.0,
+        "assetTicker": "MSFT",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 306.58
+      },
+      {
+        "transactionType": "DEPOSIT",
+        "amount": 200.0,
+        "assetTicker": "USD",
+        "assetType": "CURRENCY",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "DEPOSIT",
+        "amount": 15550.0,
+        "assetTicker": "USD",
+        "assetType": "CURRENCY",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 1.0
+      },
+      {
+        "transactionType": "BUY",
+        "amount": 10.0,
+        "assetTicker": "MSFT",
+        "assetType": "STOCK",
+        "dateRelease": "2025-07-09",
+        "purchasePrice": 342.91
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "username": "sofia",
+    "password": "nkrru123",
+    "balance": 9800.0,
+    "portfolio": [],
+    "transactionHistory": []
+  },
+  {
+    "id": 6,
+    "username": "carlos",
+    "password": "gjsot1",
+    "balance": 450.5,
+    "portfolio": [],
+    "transactionHistory": []
+  },
+  {
+    "id": 7,
+    "username": "luis",
+    "password": "333",
+    "balance": 100.0,
+    "portfolio": [],
+    "transactionHistory": []
+  }
+]

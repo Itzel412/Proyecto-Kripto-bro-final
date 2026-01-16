@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #262834;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ve.edu.ucab.presentation.controller.PerfilController">
+  <children>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="473.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/user.png" />
+      </image>
+    </ImageView>
+    <Label fx:id="perfilLabel" contentDisplay="CENTER" layoutX="42.0" layoutY="53.0" prefHeight="70.0" prefWidth="413.0" text="Perfil KRIPTOBro" textAlignment="CENTER" textFill="#e4b131">
+      <font>
+        <Font name="Segoe UI Bold Italic" size="27.0" />
+      </font>
+    </Label>
+    <Button layoutX="300.0" layoutY="213.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #e4b131;" text="Cambiar contraseña" onAction="#handleChangePassword">
+      <font>
+        <Font name="Segoe UI Italic" size="12.0" />
+      </font>
+    </Button>
+    <Button layoutX="300.0" layoutY="157.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #e4b131;" text="Cambiar nombre" onAction="#handleChangeName">
+      <font>
+        <Font name="Segoe UI Italic" size="12.0" />
+      </font>
+    </Button>
+    <ButtonBar layoutX="386.0" layoutY="340.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+        <Button mnemonicParsing="false" onAction="#handleMenu" style="-fx-background-color: #e4b131;" text="Menú">
+          <font>
+            <Font name="Segoe UI Bold Italic" size="12.0" />
+          </font>
+        </Button>
+      </buttons>
+    </ButtonBar>
+    <Label fx:id="nombreLabel" layoutX="42.0" layoutY="157.0" prefHeight="26.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="nombre" />
+    <Label fx:id="passwordLabel" layoutX="42.0" layoutY="213.0" prefHeight="26.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="password" />
+    <Label fx:id="saldoLabel" layoutX="42.0" layoutY="273.0" prefHeight="26.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="saldo" />
+    <Label layoutX="42.0" layoutY="135.0" style="-fx-text-fill: #e4b131;" text="Nombre">
+      <font>
+        <Font name="Segoe UI Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label layoutX="42.0" layoutY="192.0" style="-fx-text-fill: #e4b131;" text="Contraseña">
+      <font>
+        <Font name="Segoe UI Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label layoutX="42.0" layoutY="248.0" style="-fx-text-fill: #e4b131;" text="Saldo">
+      <font>
+        <Font name="Segoe UI Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label layoutX="42.0" layoutY="306.0" style="-fx-text-fill: #e4b131;" text="ID">
+      <font>
+        <Font name="Segoe UI Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label layoutX="42.0" layoutY="327.0" prefHeight="26.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="id" />
+  </children>
+</AnchorPane>
